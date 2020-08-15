@@ -1,0 +1,35 @@
+.productos{
+    padding-top: 10vh;
+  width: 100%;
+  height: 100vh;
+  
+}
+.pro-grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+ grid-template-areas: "pro-pro-text pro-pro-imgs"
+}
+
+.pro-pro-imgs { 
+  grid-area: pro-pro-imgs; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pro-pro-imgs img{
+  max-width: 70%;
+}
+.pro-pro-text { 
+  grid-area: pro-pro-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+ }
+ .pro-pro-text span{
+   margin: 2em;
+ }
