@@ -16,6 +16,8 @@
             <img src="img/logo.png">
             <h1>Corvi3D</h1>
             <span class="texto">Realiza tus sueños aqui</span>
+            <br>
+            <a href="#nosotros">Conocenos</a>
         </div>
     </div>
     <nav class="menu">
@@ -61,8 +63,23 @@
             <div class="ser-Titulo">
                 <h1>Servicios</h1>
             </div>
-            <div class="ser-im1">
+            <div class="ser-im1" id="ser-im1">
                 <img src="img/logo.png">
+                <div class="modal" id="modal1">
+                    <div class="modal-contenido">
+                        <div class="imagenmodal">
+                            <!-- <img src="img/1500x844_imagen3.jpg" alt="iamgen"> -->
+                        </div>
+                        <div class="modal-texto">
+                            <div class="mtitle">
+                                Impresión 3d
+                            </div>
+                            <div class="mtext">
+                                Te ayudamos a materializar tus ideas… (falta tener certeza de las cualidades de nuestra máquina y su procedimiento para incluirlo y destacar en este apartado), puedes [contactarnos]* para saber cuál es la mejor opción que podemos ofrecerte.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="ser-img2">
                 <img src="img/logo.png">
@@ -101,9 +118,10 @@
                 <span>
                     Envia tus datos para que revisemos tu proyecto
                 </span>
-                
+
                 <span>
-                    También puedes mandarnos un mensaje directo a [watsapp]* o mandarnos el archivo o los archivos que deseas cotizar a través de nuestro correo electrónico [corvi3d@gmail.com]
+                    También puedes mandarnos un mensaje directo a [watsapp]* o mandarnos el archivo o los archivos que
+                    deseas cotizar a través de nuestro correo electrónico [corvi3d@gmail.com]
                 </span>
             </div>
             <div class="cot-formulario">
@@ -111,20 +129,23 @@
                     <label for="nombre">
                         Nombre:
                     </label>
-                    <input type="email" name="nombre">
+                    <input type="text" name="nombre">
                     <label for="mail">
                         Email:
                     </label>
-                    <input type="text" name="mail">
+                    <input type="email" name="mail">
                     <label for="telefono">
                         Telefono:
                     </label>
                     <input type="text" name="telefono">
+                    <label for="archivo">
+                        Ingrese su archivo
+                    </label>
+                    <input type="file" name="archivo" id="archivo">
                     <label for="mensaje">
                         Mensaje:
                     </label>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                    
                     <button>Enviar</button>
                 </form>
             </div>

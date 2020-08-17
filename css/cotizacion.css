@@ -48,13 +48,19 @@
       resize: none;
   }
   button{
+      margin-top: 3em;
       width: 30%;
       height: 2em;
       border: none;
       border-radius: 50px;
       background-color: #ff9b00;
       text-align: center;
+      transform: translateX(25em);
   }
   label{
       font-weight: bold;
+  }
+  .cot-formulario #archivo{
+      width: 80%;
+      border-bottom: none;
   }

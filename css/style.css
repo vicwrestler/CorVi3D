@@ -4,6 +4,7 @@
 @import "productos.css";
 @import "contacto.css";
 @import "cotizacion.css";
+@import "ventanasmodal.css";
 * {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -31,7 +32,7 @@ html {
     color: #ff9b00;
     border: 8px solid #ff9b00;
     width: 30vw;
-    height: 40vh;
+    height: 60vh;
     background-color:rgba(34, 112, 136, 0) ;
     position: absolute;
     top: 0;
@@ -53,7 +54,14 @@ html {
     border-radius: 50%;
     max-width: 50%;
 }
-
+.caja a{
+    font-weight: bold;
+    border:1px solid #ff9b00;
+    color: #ff9b00;
+    background-color: #ff990073;
+    text-decoration: none;
+    font-size: 1.5em;
+}
 .menu {
     position: -webkit-sticky;
     position: sticky;
