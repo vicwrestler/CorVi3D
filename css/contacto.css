@@ -5,27 +5,51 @@
   
 }
 .con-grid-container {
-    width: 100%;
+  width: 100%;
   height: 100%;
-    display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
-    grid-template-rows: 1fr;
-   grid-template-areas: "con-con-text con-con-map"
-  }
-  
-  .con-con-text { grid-area: con-con-text; }
-  
-  .con-con-map {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1.6fr;
-   grid-template-areas: "con-con-map-dir" "con-con-map-map";
-    grid-area: con-con-map;
-  }
-  
-  .con-con-map-dir { grid-area: con-con-map-dir; }
-  
-  .con-con-map-map { grid-area: con-con-map-map; }
-  .con-con-map-map img{
-      max-width: 100%;
-  }
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 1fr;
+ grid-template-areas: "con-con-text con-con-map";
+}
+
+.con-con-text { 
+  grid-area: con-con-text; 
+  text-align: justify;
+  padding: 2em;
+}
+.con-con-text h3{
+  margin-bottom: 2em;
+}
+.con-info{
+  display: block;
+  margin-bottom: 2em;
+  transition: color 1s;
+}
+.con-info i{
+  margin-right: 0.3em;
+}
+.con-info span{
+  font-weight: bold;
+}
+.con-con-map {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.6fr;
+ grid-template-areas: "con-con-map-dir" "con-con-map-map";
+  grid-area: con-con-map;
+  text-align: center;
+}
+
+.con-con-map-dir { 
+  grid-area: con-con-map-dir; 
+  align-self: center;
+}
+
+.con-con-map-map { 
+  grid-area: con-con-map-map; 
+}
+
+/* .fa-whatsapp:hover{
+    color: green; 
+} */

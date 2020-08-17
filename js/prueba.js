@@ -1,10 +1,7 @@
-// var x = document.getElementsByClassName("img2");
-const x = document.getElementById("img2");
-x.onclick = () => {
-  x.src = "../img/imagenes/images.jpeg";
-};
-const prueba = () => {
-  console.log("hola mundo");
-};
-
-prueba();
+const what = document.getElementById("whats");
+what.addEventListener('mouseover', ()=>{
+  what.style.color = "green";
+});
+what.addEventListener('mouseleave', () => {
+  what.style.color = "black";
+});
