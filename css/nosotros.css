@@ -3,17 +3,17 @@
   width: 100%;
   height: 100vh;
 }
-.nosotros img{
+/* .nosotros img{
   max-width: 60%;
-  /* border-radius: 50%; */
-  clip-path: polygon(3% 5%, 100% 36%, 99% 99%, 3% 98%);
-}
+  border-radius: 50%;
+  
+} */
 .nos-grid-container {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 1.5fr 0.5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.4fr 0.6fr;
  grid-template-areas: "nos-nos-text nos-nos-text nos-nos-text nos-nos-imgcirc" "nos-nos-imgfoter nos-nos-imgfoter nos-nos-imgfoter nos-nos-imgfoter";
 }
 
@@ -27,9 +27,10 @@
   font-size: 50px;
 }
 .nos-nos-text span{
+  text-align: center;
   display: block;
   margin-top: 1em;
-  font-size: 30px;
+  font-size: 20px;
 }
 .nos-nos-imgcirc {
   display: grid;
@@ -39,7 +40,12 @@
   grid-area: nos-nos-imgcirc; 
   justify-items: flex-end;
 }
-
+.nos-nos-imgcirc img{
+  display: block;
+  max-width: 70%;
+  clip-path: circle(50% at 50% 50%);
+  /* border-radius: 50%; */
+}
 .nos-nos-imgcirc-2 { 
   grid-area: nos-nos-imgcirc-2; 
 }
@@ -47,7 +53,42 @@
 .nos-nos-imgcirc-1 { 
   grid-area: nos-nos-imgcirc-1; 
 }
-
-.nos-nos-imgfoter {   
+.nos-nos-imgfoter{
   grid-area: nos-nos-imgfoter; 
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nos-nos-imgfoter img{
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 1fr;
+  max-width: 100%;
+  overflow: hidden;
+}
+.nos-nos-imgfoter img:nth-child(1){
+  clip-path: polygon(1% 1%, 100% 17%, 95% 100%, 2% 99%);
+  height: 250px;
+  object-fit: cover;
+  transform: translateY(-30px);
+}
+.nos-nos-imgfoter img:nth-child(2){
+  clip-path: polygon(10% 1%, 100% 17%, 98% 100%, 0 98%);
+  left: 300px;
+}
+.nos-nos-imgfoter img:nth-child(3){
+  clip-path: polygon(6% 3%, 90% 12%, 100% 99%, 0 99%);
+  left: 600px;
+  height: 150px;
+  object-fit: cover;
+  transform: translateY(20px);
+}
+.nos-nos-imgfoter img:nth-child(4){
+  clip-path: polygon(0 0, 98% 13%, 100% 100%, 10% 99%);
+  left: 877px;
+  height: 140px;
+  object-fit: cover;
+  transform: translateY(25px);
 }

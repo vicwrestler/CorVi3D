@@ -45,12 +45,13 @@
       border-bottom: 1px solid #ff9b00;
   }
   #mensaje{
+      width: 100%;
       resize: none;
   }
   button{
       margin-top: 3em;
       width: 30%;
-      height: 2em;
+      height: 7em;
       border: none;
       border-radius: 50px;
       background-color: #ff9b00;
@@ -59,8 +60,10 @@
   }
   label{
       font-weight: bold;
+      margin-top: 1em;
   }
   .cot-formulario #archivo{
       width: 80%;
+      height: auto;
       border-bottom: none;
   }

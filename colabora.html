@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba con Css puro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/colabora.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98dd361577.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html" class="logo"><img src="img/logos-corvi3d/corvi3d_transparencia.png"></a>
+        <a href="index.html#nosotros" class="btn" id="btn-nosotros">Nosotros</a>
+        <a href="index.html#servicios" class="btn" id="btn-servicios">Servicios</a>
+        <a href="index.html#productos" class="btn" id="btn-productos">Productos</a>
+        <a href="index.html#cotizacion" class="btn" id="btn-cotizacion">Cotización</a>
+        <a href="index.html #contacto" class="btn" id="btn-contacto">Contacto</a>
+    </nav>
+    <div class="cotizacion" id="cotizacion">
+        <div class="cot-container">
+            <div class="cot-text">
+                <span>
+                    Estamos buscando colaboradores para integrarse en los proyectos de Corvi3D, necesitamos personas que cumplan con el siguiente perfil:
+                </span>
+                <span>
+                    <ul>
+                        <li>
+                            <i class="fas fa-graduation-cap"></i>
+                            Escolaridad indistinta
+                        </li>
+                        <li>
+                            <i class="fas fa-list-alt"></i>
+                            Alto sentido de responsabilidad
+                        </li>
+                        <li>
+                            Disposición para realizar trabajos en “tiempo record” procurando la mejor calidad
+                        </li>
+                        <li>
+                            Manejo especializado de uno o más de los siguientes programas:
+                        </li>
+                        <li>
+                            Maya
+                        </li>
+                        <li>
+                            Autocad
+                        </li>
+                        <li>
+                            Ilustrator
+                        </li>
+                        <li>
+                            Rhino
+                        </li>
+                        <li>
+                            Freecad
+                        </li>
+                        <li>
+                            Zbrush
+                        </li>
+                        <li>
+                            Blender
+                        </li>
+                        <li>
+                            Inkscape
+                        </li>
+                    </ul>
+                </span>
+                <span>
+                    Si cumples con el perfil y estas interesado por favor envíanos tus datos y medios de contacto para hacerte llegar la información detallada.
+                </span>
+            </div>
+            <div class="cot-formulario">
+                <form action="enviar.php" enctype="multipart/form-data" method="POST">
+                    <label for="nombre">
+                        Nombre:
+                    </label>
+                    <input type="text" name="nombre">
+                    <label for="mail">
+                        Email:
+                    </label>
+                    <input type="email" name="mail">
+                    <label for="telefono">
+                        Telefono:
+                    </label>
+                    <input type="text" name="telefono">
+                    <label for="archivo">
+                        Envia tu portafolio
+                    </label>
+                    <input type="file" name="archivo" id="archivo">
+                    <label for="mensaje">
+                        Mensaje:
+                    </label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/prueba-dist.js"></script>
+</body>
